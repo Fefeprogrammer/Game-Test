@@ -43,11 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entidades\Entidade.cs" />
+    <Compile Include="Entidades\Inimigo.cs" />
+    <Compile Include="Entidades\Jogador.cs" />
+    <Compile Include="Entidades\Tags.cs" />
+    <Compile Include="Entidades\Vida.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Otter-master\Otter\Otter.csproj">
+      <Project>{236485c2-a7ba-4dcd-808a-b3a634764402}</Project>
+      <Name>Otter</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
